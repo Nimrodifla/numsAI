@@ -1,0 +1,14 @@
+﻿  main.cpp
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(83,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(122,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(132,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(179,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(198,11): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(214,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(247,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(264,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(300,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(313,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(322,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Nimrod\source\repos\MyAI\MyAI\main.cpp(335,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  MyAI.vcxproj -> C:\Users\Nimrod\source\repos\MyAI\Debug\MyAI.exe
