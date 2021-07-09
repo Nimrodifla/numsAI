@@ -8,6 +8,7 @@ using namespace std::chrono;
 #define BASE_VAL 1000
 #define FORMS_TO_KEEP 5
 #define MAX_ALLOWED_DELTA 0
+#define FORMULAS_TO_EACH_DATA_PAIR 1
 
 struct inOut
 {
@@ -44,7 +45,7 @@ int main()
 	formulas.push_back(f);
 
 
-	int i = 0;
+	int i = 0, j = 0;
 	float in = 0, out = 0;
 	bool flag = true;
 	while (flag)
@@ -82,14 +83,17 @@ int main()
 		bool dIsEquel = true;
 		for (i = 0; i < trainData.size(); i++)
 		{
-			generateFormula(trainData[i].in, trainData[i].out, formulas);
-			float temp = f->getResult(trainData[i].in) - trainData[i].out;
-			avgDelta += temp;
-			if (definedValue(temp) > MAX_ALLOWED_DELTA)
-				allGood = false;
-			if (d != temp)
+			for (j = 0; j < FORMULAS_TO_EACH_DATA_PAIR; j++)
 			{
-				dIsEquel = false;
+				generateFormula(trainData[i].in, trainData[i].out, formulas);
+				float temp = f->getResult(trainData[i].in) - trainData[i].out;
+				avgDelta += temp;
+				if (definedValue(temp) > MAX_ALLOWED_DELTA)
+					allGood = false;
+				if (d != temp)
+				{
+					dIsEquel = false;
+				}
 			}
 		}
 
